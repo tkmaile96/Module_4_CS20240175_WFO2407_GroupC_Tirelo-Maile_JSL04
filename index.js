@@ -6,10 +6,10 @@
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
 console.log(userPreference === 'sugar-free' ? 'sugar-free' : 'Regular'); 
-/* if(userPreference === sugar){
-return 'Sugar-free';
+/* if(userPreference === sugar-free){
+console.log('sugar-free')
 } else {
-    return 'regular';
+    console.log("regular")
  }*/
 
 
@@ -21,9 +21,9 @@ return 'Sugar-free';
 let cansLeft = 3; // Any number of cans
 console.log(cansLeft < 5 ? 'Time to restock' : 'We are stocked');
 /*if(cansLeft < 5) {
-    return 'Time to stock'
+    console.log("Time to restock")
 }else{
-    return 'We are stocked'
+    console.log("We are stocked")
 }*/
 
 
@@ -32,7 +32,13 @@ console.log(cansLeft < 5 ? 'Time to restock' : 'We are stocked');
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+//console.log(heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!');
+if(heartRate < 100) {
+    console.log('Boost needed!')
+
+} else {
+    console.log('Energy levels are high!')
+}
 
 
 // #### Challenge 4: Temperature Suitability
